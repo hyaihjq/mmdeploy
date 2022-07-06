@@ -210,7 +210,7 @@ class BaseTask(metaclass=ABCMeta):
 
     @staticmethod
     @abstractmethod
-    def get_tensor_from_input(self, input_data: Dict[str, Any],
+    def get_tensor_from_input(input_data: Dict[str, Any],
                               **kwargs) -> torch.Tensor:
         """Get input tensor from input data.
 
